@@ -7,5 +7,92 @@
     <!-- Custom stylesheets -->
     <link rel="stylesheet" href="stysheets/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header starts -->
+    <header>
+      <nav class="primary-nav">
+        <ul class="primary-nav-list">
+          <li class="primary-nav__item">
+            <a href="#" class="primary-nav__link">Gmail</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="#" class="primary-nav__link">Images</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="#" class="primary-nav__icon">
+              <img src="images/show-apps-button.svg" alt="" />
+            </a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="#" class="button button--primary">Sign in</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main starts -->
+    <main>
+      <img
+        srcset="images/google-logo-1x.png 1x, images/google-logo-2x.png 2x"
+        src="images/google-logo-2x.png"
+        alt="Google Logo"
+        class="logo"
+      />
+
+      <!-- Search section starts -->
+      <section class="search">
+        <div class="search-bar">
+          <label for="search-input" aria-label="Search">
+            <img src="images/google-search-icon.jpg" alt="" />
+          </label>
+        </div>
+        <input type="text" id="search-input" class="search-bar__input" />
+        <div class="search-bar__buttons">
+          <a href="#" class="button button--default">Google Search</a
+          ><a href="#" class="button button--default">I'm Feeling Lucky</a>
+        </div>
+      </section>
+      <!-- Search section ends -->
+    </main>
+    <!-- Main ends -->
+
+    <!-- Footer starts -->
+    <footer>
+      <!-- Country section starts -->
+      <section class="country">Senegal</section>
+      <!-- Country section ends -->
+      <!-- Footer navigation starts -->
+      <nav class="secondary-nav">
+        <ul class="secondary-nav secondary-nav--left">
+          <li class="secondary-nav__item">
+            <a href="#" class="secondary-nav__link">Advertising</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a href="#" class="secondary-nav__link">Business</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a href="#" class="secondary-nav__link">About</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a href="#" class="secondary-nav__link">How search works</a>
+          </li>
+        </ul>
+
+        <ul class="secondary-nav secondary-nav--right">
+          <li class="secondary-nav__item">
+            <a href="#" class="secondary-nav__link">Privacy</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a href="#" class="secondary-nav__link">Terms</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a href="#" class="secondary-nav__link">Settings</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Footer navigation ends -->
+    </footer>
+    <!-- Footer ends -->
+  </body>
 </html>
