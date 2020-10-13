@@ -1,5 +1,46 @@
 /**
  *  TABLE OF CONTENTS
- *
- *
+ *  1.0 - Settings
+ *    1.1 - Normalize.css
+ *    1.2 - Custom properties
+ *  2.0 - General styles
+ *  3.0 - Components
+ *    3.1 - Buttons
+ *  4.0 - Layout
+ *    4.1 - Header
+ *    4.2 - Main
+ *    4.3 - Footer
  */
+
+/*==================================*\
+  1.0 - Settings
+\*==================================*/
+
+/* === 1.1 - Normalize.css ===*/
+@import "normalize.css";
+
+/* === 1.2 - Custom properties ===*/
+:root {
+  --button-default-bg: #f2f2f2;
+  --button-default-bg-hover: #f8f8f8;
+  --button-default-text: #5f6368;
+  --button-default-text-hover: #222;
+  --button-default-border-color-hover: #f2f2f2;
+  --button-default-border-color-hover: #c6c6c6;
+
+  --button-primary-bg: #4285f4;
+  --button-primary-border-color: #4285f4;
+
+  --primary-nav-text: #000;
+  --primary-nav-font-size: 1.3rem;
+
+  --search-bar-border-color: ##dfe1e5;
+
+  --footer-bg: #f2f2f2;
+  --footer-text: #717171;
+  --footer-border-color: #e4e4e4;
+
+  --secondary-nav-text: #5f6368;
+
+  --body-bg: #fff;
+}
