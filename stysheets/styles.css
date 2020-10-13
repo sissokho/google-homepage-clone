@@ -25,7 +25,7 @@
   --button-default-bg-hover: #f8f8f8;
   --button-default-text: #5f6368;
   --button-default-text-hover: #222;
-  --button-default-border-color-hover: #f2f2f2;
+  --button-default-border-color: #f2f2f2;
   --button-default-border-color-hover: #c6c6c6;
 
   --button-primary-bg: #4285f4;
@@ -43,4 +43,70 @@
   --secondary-nav-text: #5f6368;
 
   --body-bg: #fff;
+
+  --big-font-size: 1.4rem;
+  --medium-font-size: 1.3rem;
+}
+
+/*==================================*\
+  2.0 - General styles
+\*==================================*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--body-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*==================================*\
+  3.0 - Components
+\*==================================*/
+/* === 3.1 - Buttons ===*/
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.button--default {
+  padding: 1.3em 1em;
+  background: var(--button-default-bg);
+  border-color: var(--button-default-border-color);
+  border-radius: 3px;
+  color: var(--button-default-text);
+}
+
+.button--default:hover {
+  padding: 1.3em 1em;
+  background: var(--button-default-bg-hover);
+  border-color: var(--button-default-border-color-hover);
+  color: var(--button-default-text-hover);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.button--primary {
+  padding: 0.9em 1em;
+  background: var(--button-primary-bg);
+  border-color: var(--button-primary-bg);
+  border-radius: 2px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.button--primary:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
