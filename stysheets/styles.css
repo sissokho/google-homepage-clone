@@ -29,6 +29,7 @@
   --button-default-border-color-hover: #c6c6c6;
 
   --button-primary-bg: #4285f4;
+  --button-primary-bg-active: #1a52ac;
   --button-primary-border-color: #4285f4;
 
   --primary-nav-text: #000;
@@ -71,6 +72,13 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
 }
 
 /*==================================*\
@@ -80,6 +88,12 @@ a {
 .button {
   display: inline-block;
   border: 1px solid transparent;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  text-decoration: none;
 }
 
 .button--default {
@@ -98,6 +112,11 @@ a {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
+.button--default:focus,
+.button--default:active {
+  border-color: var(--button-primary-border-color);
+}
+
 .button--primary {
   padding: 0.9em 1em;
   background: var(--button-primary-bg);
@@ -109,4 +128,10 @@ a {
 
 .button--primary:hover {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button--primary:active {
+  border-color: var(--button-primary-bg-active);
+  background: var(--button-primary-bg-active);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.5) inset;
 }
