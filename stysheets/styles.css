@@ -29,10 +29,10 @@
   --button-default-border-color-hover: #c6c6c6;
 
   --button-primary-bg: #4285f4;
+  --button-primary-bg-active: #1a52ac;
   --button-primary-border-color: #4285f4;
 
   --primary-nav-text: #000;
-  --primary-nav-font-size: 1.3rem;
 
   --search-bar-border-color: ##dfe1e5;
 
@@ -65,12 +65,25 @@ html {
 }
 
 body {
+  height: 100vh;
+  padding: 0 2.5em;
   font-family: Arial, Helvetica, sans-serif;
   background: var(--body-bg);
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
 }
 
 /*==================================*\
@@ -82,6 +95,12 @@ a {
   border: 1px solid transparent;
 }
 
+.button:hover,
+.button:focus,
+.button:active {
+  text-decoration: none;
+}
+
 .button--default {
   padding: 1.3em 1em;
   background: var(--button-default-bg);
@@ -91,15 +110,19 @@ a {
 }
 
 .button--default:hover {
-  padding: 1.3em 1em;
   background: var(--button-default-bg-hover);
   border-color: var(--button-default-border-color-hover);
   color: var(--button-default-text-hover);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
+.button--default:focus,
+.button--default:active {
+  border-color: var(--button-primary-border-color);
+}
+
 .button--primary {
-  padding: 0.9em 1em;
+  padding: 0.7em 0.5em;
   background: var(--button-primary-bg);
   border-color: var(--button-primary-bg);
   border-radius: 2px;
@@ -109,4 +132,55 @@ a {
 
 .button--primary:hover {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button--primary:active {
+  border-color: var(--button-primary-bg-active);
+  background: var(--button-primary-bg-active);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+/*==================================*\
+  4.0 - Layout
+\*==================================*/
+/* === 4.1 - Header ===*/
+header {
+  height: 10vh;
+  font-size: var(--medium-font-size);
+}
+
+.primary-nav {
+  height: 100%;
+}
+
+.primary-nav__list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.primary-nav__item + .primary-nav__item {
+  margin-left: 1em;
+}
+
+.primary-nav__link {
+  color: var(--primary-nav-text);
+}
+
+.primary-nav__link:hover {
+  opacity: 0.7;
+}
+
+.primary-nav__item:nth-of-type(3) .primary-nav__link {
+  opacity: 0.5;
+}
+
+.primary-nav__item:nth-of-type(3) .primary-nav__link:hover {
+  opacity: 1;
+}
+
+.primary-nav__icon {
+  height: 1.5em;
+  width: 1.5em;
 }
