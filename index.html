@@ -42,11 +42,11 @@
       <!-- Search section starts -->
       <section class="search">
         <div class="search-bar">
-          <label for="search-input" aria-label="Search">
-            <img src="images/google-search-icon.jpg" alt="" />
+          <label for="search-input" class="search-bar__label" aria-label="Search">
+            <img src="images/google-search-icon.jpg" alt="" class="search-bar__search-icon" />
           </label>
+          <input type="text" id="search-input" class="search-bar__input" />
         </div>
-        <input type="text" id="search-input" class="search-bar__input" />
         <div class="search-bar__buttons">
           <a href="#" class="button button--default">Google Search</a
           ><a href="#" class="button button--default">I'm Feeling Lucky</a>
@@ -63,7 +63,7 @@
       <!-- Country section ends -->
       <!-- Footer navigation starts -->
       <nav class="secondary-nav">
-        <ul class="secondary-nav secondary-nav--left">
+        <ul class="secondary-nav__list secondary-nav__list--left">
           <li class="secondary-nav__item">
             <a href="#" class="secondary-nav__link">Advertising</a>
           </li>
@@ -78,7 +78,7 @@
           </li>
         </ul>
 
-        <ul class="secondary-nav secondary-nav--right">
+        <ul class="secondary-nav__list secondary-nav__list--right">
           <li class="secondary-nav__item">
             <a href="#" class="secondary-nav__link">Privacy</a>
           </li>
